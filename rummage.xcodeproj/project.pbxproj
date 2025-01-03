@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		481A8EF52D281B14000A749A /* librummage.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 481A8EF42D281B14000A749A /* librummage.dylib */; };
+		481A8EF62D281B14000A749A /* librummage.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 481A8EF42D281B14000A749A /* librummage.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		481A8EFB2D281D13000A749A /* Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 481A8EFA2D281D13000A749A /* Test.m */; };
 		48ADECE22D2816FE00582E15 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48ADECE12D2816FE00582E15 /* AppDelegate.swift */; };
 		48ADECE42D2816FE00582E15 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48ADECE32D2816FE00582E15 /* SceneDelegate.swift */; };
 		48ADECE62D2816FE00582E15 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48ADECE52D2816FE00582E15 /* ViewController.swift */; };
@@ -35,7 +38,25 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		481A8EF72D281B14000A749A /* Embed Libraries */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				481A8EF62D281B14000A749A /* librummage.dylib in Embed Libraries */,
+			);
+			name = "Embed Libraries";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		481A8EF42D281B14000A749A /* librummage.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = librummage.dylib; path = "rummage-lib/target/aarch64-apple-ios/debug/librummage.dylib"; sourceTree = "<group>"; };
+		481A8EF82D281B27000A749A /* librummage.d */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.dtrace; name = librummage.d; path = "rummage-lib/target/aarch64-apple-ios/debug/librummage.d"; sourceTree = "<group>"; };
+		481A8EF92D281D13000A749A /* rummage-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "rummage-Bridging-Header.h"; sourceTree = "<group>"; };
+		481A8EFA2D281D13000A749A /* Test.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Test.m; sourceTree = "<group>"; };
 		48ADECDE2D2816FE00582E15 /* rummage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rummage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48ADECE12D2816FE00582E15 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		48ADECE32D2816FE00582E15 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				481A8EF52D281B14000A749A /* librummage.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,6 +130,8 @@
 				48ADECEA2D2816FF00582E15 /* Assets.xcassets */,
 				48ADECEC2D2816FF00582E15 /* LaunchScreen.storyboard */,
 				48ADECEF2D2816FF00582E15 /* Info.plist */,
+				481A8EFA2D281D13000A749A /* Test.m */,
+				481A8EF92D281D13000A749A /* rummage-Bridging-Header.h */,
 			);
 			path = rummage;
 			sourceTree = "<group>";
@@ -132,6 +156,8 @@
 		48ADED112D28183100582E15 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				481A8EF82D281B27000A749A /* librummage.d */,
+				481A8EF42D281B14000A749A /* librummage.dylib */,
 				48ADED122D28183100582E15 /* librummage.d */,
 			);
 			name = Frameworks;
@@ -147,6 +173,7 @@
 				48ADECDA2D2816FE00582E15 /* Sources */,
 				48ADECDB2D2816FE00582E15 /* Frameworks */,
 				48ADECDC2D2816FE00582E15 /* Resources */,
+				481A8EF72D281B14000A749A /* Embed Libraries */,
 			);
 			buildRules = (
 			);
@@ -205,6 +232,7 @@
 				TargetAttributes = {
 					48ADECDD2D2816FE00582E15 = {
 						CreatedOnToolsVersion = 15.4;
+						LastSwiftMigration = 1540;
 					};
 					48ADECF32D28170000582E15 = {
 						CreatedOnToolsVersion = 15.4;
@@ -269,6 +297,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				48ADECE62D2816FE00582E15 /* ViewController.swift in Sources */,
+				481A8EFB2D281D13000A749A /* Test.m in Sources */,
 				48ADECE22D2816FE00582E15 /* AppDelegate.swift in Sources */,
 				48ADECE42D2816FE00582E15 /* SceneDelegate.swift in Sources */,
 			);
@@ -450,8 +479,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = rummage/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -463,10 +494,15 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/rummage-lib/target/aarch64-apple-ios/debug";
+				"LIBRARY_SEARCH_PATHS[sdk=iphoneos*]" = "$(PROJECT_DIR)/rummage-lib/target/aarch64-apple-ios/debug";
+				"LIBRARY_SEARCH_PATHS[sdk=iphonesimulator*]" = "$(PROJECT_DIR)/rummage-lib/target/aarch64-apple-ios-sim/debug";
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = vincent.rummage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "rummage/rummage-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -477,8 +513,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = rummage/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -490,10 +528,15 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/rummage-lib/target/aarch64-apple-ios/debug",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = vincent.rummage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "rummage/rummage-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
