@@ -1,0 +1,16 @@
+[package]
+name = "rummage"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib"]
+
+
+[dependencies]
+llama_cpp = { version = "0.3.2" }
+rusqlite = { version = "0.32.1" }
+sqlite-vec = { version = "0.1.6" }
+
+[build]
+rustflags = ["-C", "link-arg=-lc"]
