@@ -15,6 +15,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
+        LibHandler.shared.refresh();
+        guard let res = LibHandler.shared.prompt(prompt: "Swift is cool") else { return true };
+        print("response: ", res);
+        
+        guard let update = LibHandler.shared.generateDailyUpdate() else { return true };
+        print("update: ", update);
+        
+        LibHandler.shared.killLlama();
+        LibHandler.shared.destroy();
+        
         return true
     }
 

@@ -10,6 +10,7 @@
 		481A8EF52D281B14000A749A /* librummage.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 481A8EF42D281B14000A749A /* librummage.dylib */; };
 		481A8EF62D281B14000A749A /* librummage.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 481A8EF42D281B14000A749A /* librummage.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		481A8EFB2D281D13000A749A /* Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 481A8EFA2D281D13000A749A /* Test.m */; };
+		481A8EFD2D281EC1000A749A /* LibHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481A8EFC2D281EC1000A749A /* LibHandler.swift */; };
 		48ADECE22D2816FE00582E15 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48ADECE12D2816FE00582E15 /* AppDelegate.swift */; };
 		48ADECE42D2816FE00582E15 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48ADECE32D2816FE00582E15 /* SceneDelegate.swift */; };
 		48ADECE62D2816FE00582E15 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48ADECE52D2816FE00582E15 /* ViewController.swift */; };
@@ -57,6 +58,7 @@
 		481A8EF82D281B27000A749A /* librummage.d */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.dtrace; name = librummage.d; path = "rummage-lib/target/aarch64-apple-ios/debug/librummage.d"; sourceTree = "<group>"; };
 		481A8EF92D281D13000A749A /* rummage-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "rummage-Bridging-Header.h"; sourceTree = "<group>"; };
 		481A8EFA2D281D13000A749A /* Test.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Test.m; sourceTree = "<group>"; };
+		481A8EFC2D281EC1000A749A /* LibHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibHandler.swift; sourceTree = "<group>"; };
 		48ADECDE2D2816FE00582E15 /* rummage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rummage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48ADECE12D2816FE00582E15 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		48ADECE32D2816FE00582E15 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 				48ADECEF2D2816FF00582E15 /* Info.plist */,
 				481A8EFA2D281D13000A749A /* Test.m */,
 				481A8EF92D281D13000A749A /* rummage-Bridging-Header.h */,
+				481A8EFC2D281EC1000A749A /* LibHandler.swift */,
 			);
 			path = rummage;
 			sourceTree = "<group>";
@@ -299,6 +302,7 @@
 				48ADECE62D2816FE00582E15 /* ViewController.swift in Sources */,
 				481A8EFB2D281D13000A749A /* Test.m in Sources */,
 				48ADECE22D2816FE00582E15 /* AppDelegate.swift in Sources */,
+				481A8EFD2D281EC1000A749A /* LibHandler.swift in Sources */,
 				48ADECE42D2816FE00582E15 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

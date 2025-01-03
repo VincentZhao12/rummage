@@ -121,7 +121,7 @@ pub mod c_api {
 
     #[no_mangle]
     pub extern "C" fn rummage_free(ptr: *mut std::ffi::c_void) {
-        let b = unsafe { Box::from_raw(ptr.cast::<Rummage>()) };
+        let b = unsafe { Box::from_raw(ptr) };
         drop(b)
     }
 }
